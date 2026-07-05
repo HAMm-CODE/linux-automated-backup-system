@@ -27,7 +27,7 @@ echo "$2"
 currentTS=`date +%s`
 
 # [TASK 4]
-backupFileName=""
+backupFileName="backup-$currentTS.tar.dz"
 
 # We're going to:
   # 1: Go into the target directory
@@ -37,7 +37,7 @@ backupFileName=""
 # To make things easier, we will define some useful variables...
 
 # [TASK 5]
-origAbsPath=``
+origAbsPath=`/workspaces/linux-automated-backup-system`
 
 # [TASK 6]
 cd # <-
