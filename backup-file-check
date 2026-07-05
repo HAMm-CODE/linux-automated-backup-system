@@ -1,0 +1,11 @@
+total 72
+-rw-rw-rw-  1 codespace root      11357 Jul  5 16:33  LICENSE
+-rw-rw-rw-  1 codespace root          0 Jul  5 16:33  README.md
+-rw-rw-rw-  1 codespace codespace  4423 Jul  5 18:47 'backup-[1783277250].tar.dz'
+-rw-rw-rw-  1 codespace codespace    61 Jul  5 19:29  backup-permissions
+-rw-rw-rw-  1 codespace codespace   265 Jul  5 19:05  backup-script-copy.txt
+-rwxrwxrwx  1 codespace codespace  1360 Jul  5 18:26  backup.sh
+-rw-rw-rw-  1 codespace codespace   170 Jul  5 19:18  crontab-schedule.txt
+drwxr-xr-x+ 2 codespace codespace  4096 Jul  5 18:47  important-documents
+-rw-rw-rw-  1 codespace codespace  4995 Sep 28  2022  important-documents.zip
+-rw-rw-rw-  1 codespace codespace 22322 Jul  5 16:43  lab-instructions_bash_final_project.md
