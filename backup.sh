@@ -37,15 +37,15 @@ backupFileName="backup-$currentTS.tar.dz"
 # To make things easier, we will define some useful variables...
 
 # [TASK 5]
-origAbsPath=`/workspaces/linux-automated-backup-system`
+origAbsPath="$(pwd)"
 
 # [TASK 6]
-cd # <-
-destDirAbsPath=`/workspaces/linux-automated-backup-system`
+cd $destinationDirectory
+destDirAbsPath="$(pwd)"
 
 # [TASK 7]
-cd # <-
-cd # <-
+cd "$origAbsPath"
+cd "$targetDirectory"
 
 # [TASK 8]
 yesterdayTS=
