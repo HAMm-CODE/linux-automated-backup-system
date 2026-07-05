@@ -24,10 +24,10 @@ echo "$1"
 echo "$2"
 
 # [TASK 3]
-currentTS=`date +%s`
+currentTS=$(date +%s)
 
 # [TASK 4]
-backupFileName="backup-$currentTS.tar.dz"
+backupFileName="backup-[$currentTS].tar.dz"
 
 # We're going to:
   # 1: Go into the target directory
@@ -40,29 +40,29 @@ backupFileName="backup-$currentTS.tar.dz"
 origAbsPath="$(pwd)"
 
 # [TASK 6]
-cd $destinationDirectory
+cd $destinationDirectory || exit
 destDirAbsPath="$(pwd)"
 
 # [TASK 7]
-cd "$origAbsPath"
-cd "$targetDirectory"
+cd "$origAbsPath" || exit
+cd "$targetDirectory" || exit
 
 # [TASK 8]
-yesterdayTS=
+yesterdayTS=$(($currentTS - 24 * 60 * 60))
 
 declare -a toBackup
 
-for file in  # [TASK 9]
+for file in * # [TASK 9]
 do
   # [TASK 10]
-  if (())
+  if (($(date -r "$file" +%s) > $yesterdayTS))
   then
-    # [TASK 11]
+    toBackup+=($file) # [TASK 11]
   fi
 done
 
 # [TASK 12]
-
+tar -czvf $backupFileName ${toBackup[@]}
 # [TASK 13]
 
 # Congratulations! You completed the final project for this course!
