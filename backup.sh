@@ -41,7 +41,7 @@ origAbsPath=`/workspaces/linux-automated-backup-system`
 
 # [TASK 6]
 cd # <-
-destDirAbsPath=``
+destDirAbsPath=`/workspaces/linux-automated-backup-system`
 
 # [TASK 7]
 cd # <-
